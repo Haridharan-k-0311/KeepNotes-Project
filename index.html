@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeepNotes</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>KeepNotes</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad Poor Dad</h2>
+            <h5>- Robert </h5>
+            <p>This book is a delightful blend of humor, self-help, and inspiration. It's a must-read for anyone who wants to make a difference in their life.</p>
+            <button onclick="deletenote(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" id="book-title" placeholder="Book Title" required>
+            <input type="text" id="author-name" placeholder="Author Name" required>
+            <textarea id="description" placeholder="Short Description...." required></textarea>
+            <button class="popup-add-btn">Add</button>
+            <button class="cancel-btn">Cancel</button>
+        </form>
+    </div>
+
+    <button class="add-btn" id="add-popup">+</button>
+</body>
+
+<script src="./script.js"></script>
+</html>
